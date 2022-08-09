@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 
-/**
- * Created by kamdem
- */
+
 public class MultipleChoiceQuestion extends CheckBoxQuestion{
     public MultipleChoiceQuestion(String questionString,
                                   ArrayList<String> setOfPossibleAnswers,

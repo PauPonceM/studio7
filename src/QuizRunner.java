@@ -3,9 +3,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-/**
- * Created by kamdem
- */
+
 public class QuizRunner {
     public static List<Question> quizQuestions;
     public static ArrayList<String> tempList = new ArrayList<>();

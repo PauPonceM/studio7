@@ -3,9 +3,7 @@ import java.util.ArrayList;
 
 import java.util.ArrayList;
 
-/**
- * Created by kamdem
- */
+
 public class CheckBoxQuestion extends Question {
 
     public CheckBoxQuestion(String questionString,

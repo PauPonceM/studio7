@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 
-/**
- * Created by kamdem
- */
+
 public abstract class Question {
     private String questionString;
     private ArrayList<String> setOfPossibleAnswers;

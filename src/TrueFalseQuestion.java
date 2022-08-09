@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 
-/**
- * Created by kamdem
- */
+
 public class TrueFalseQuestion extends CheckBoxQuestion {
     static final String TRUE = "TRUE";
     static final String FALSE = "FALSE";
