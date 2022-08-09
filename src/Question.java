@@ -1,19 +1,43 @@
+import java.util.ArrayList;
+
+/**
+ * Created by kamdem
+ */
 public abstract class Question {
-private String question;
-private boolean correct;
+    private String questionString;
+    private ArrayList<String> setOfPossibleAnswers;
+    private ArrayList<String> sublistOfCorrectAnswers;
 
-private int grade;
+    public String getQuestionString() {
+        return questionString;
+    }
 
-public Question (String aQuestion, boolean aCorrect, int aGrade){
-    question = aQuestion;
-    correct= aCorrect;
-    grade= aGrade;
-}
+    protected void setQuestionString(String questionString) {
+        this.questionString = questionString;
+    }
 
-public abstract String askQuestion();
+    public ArrayList<String> getSetOfPossibleAnswers() {
+        return setOfPossibleAnswers;
+    }
 
-    public abstract void getUserAnswer();
+    protected void setSetOfPossibleAnswers(ArrayList<String> setOfPossibleAnswers) {
+        this.setOfPossibleAnswers = new ArrayList<>(setOfPossibleAnswers);
+    }
 
-public abstract int gradeAnswer();
+    public ArrayList<String> getSublistOfCorrectAnswers() {
+        return sublistOfCorrectAnswers;
+    }
 
+    protected void setSublistOfCorrectAnswers(ArrayList<String> sublistOfAnswers) {
+        this.sublistOfCorrectAnswers = new ArrayList<>(sublistOfAnswers);
+    }
+
+    public void printQuestion() {
+        System.out.println("Question: " + questionString + "\n"
+                + "Possible answers: " + setOfPossibleAnswers);
+    }
+
+    public void printAnswer() {
+        System.out.println("Answer to the Question: " + sublistOfCorrectAnswers);
+    }
 }
